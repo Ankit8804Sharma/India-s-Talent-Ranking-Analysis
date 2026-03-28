@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts
+from analysis.setup import *
+from analysis.data_load import india_ts
 
 corr_matrix       = india_ts.corr()
 corr_with_overall = corr_matrix['Overall'].drop('Overall')
@@ -50,6 +50,6 @@ plt.suptitle('Fig 5: Correlation Analysis — India Pillar Scores',
 plt.tight_layout()
 plt.savefig('analysis/charts/fig5_correlation.png')
 plt.show()
-print('Fig 5 saved → analysis/charts/fig5_correlation.png')
+print('Fig 5 saved -> analysis/charts/fig5_correlation.png')
 print('\nCorrelations with Overall:')
 print(corr_with_overall.to_string())

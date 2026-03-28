@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import snap25
+from analysis.setup import *
+from analysis.data_load import snap25
 
 top5    = snap25.head(5)
 bottom5 = snap25.tail(5).sort_values('Rank', ascending=False)
@@ -44,4 +44,4 @@ plt.suptitle('Fig 7: Top 5 and Bottom 5 Countries in IMD WTR 2025',
 plt.tight_layout()
 plt.savefig('analysis/charts/fig7_top5_bottom5.png')
 plt.show()
-print('Fig 7 saved → analysis/charts/fig7_top5_bottom5.png')
+print('Fig 7 saved -> analysis/charts/fig7_top5_bottom5.png')

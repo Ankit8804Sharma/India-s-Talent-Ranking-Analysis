@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import df_overall
+from analysis.setup import *
+from analysis.data_load import df_overall
 
 # Sort by 2025 score
 hm_df = df_overall[YEARS].copy()
@@ -48,4 +48,4 @@ ax.set_xticklabels(YEARS, rotation=45)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig11_heatmap_all_countries.png')
 plt.show()
-print('Fig 11 saved → analysis/charts/fig11_heatmap_all_countries.png')
+print('Fig 11 saved -> analysis/charts/fig11_heatmap_all_countries.png')

@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts
+from analysis.setup import *
+from analysis.data_load import india_ts
 
 fig, ax = plt.subplots(figsize=(12, 6))
 
@@ -37,4 +37,4 @@ ax.set_ylim(35, 65)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig2_india_pillar_trends.png')
 plt.show()
-print('✅ Fig 2 saved → analysis/charts/fig2_india_pillar_trends.png')
+print('Fig 2 saved -> analysis/charts/fig2_india_pillar_trends.png')

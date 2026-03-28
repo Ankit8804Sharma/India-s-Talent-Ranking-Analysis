@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import snap25, global_avg
+from analysis.setup import *
+from analysis.data_load import snap25, global_avg
 
 fig, ax = plt.subplots(figsize=(14, 7))
 
@@ -52,4 +52,4 @@ ax.grid(axis='y', alpha=0.3, zorder=0)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig1_global_rankings_2025.png')
 plt.show()
-print('Fig 1 saved → analysis/charts/fig1_global_rankings_2025.png')
+print('Fig 1 saved -> analysis/charts/fig1_global_rankings_2025.png')

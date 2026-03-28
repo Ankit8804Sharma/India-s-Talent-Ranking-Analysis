@@ -4,7 +4,7 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
+from analysis.setup import *
 
 # Test parameters 
 india_score = 48.959
@@ -74,5 +74,5 @@ ax.grid(alpha=0.2)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig8_ttest_distribution.png')
 plt.show()
-print(f'Fig 8 saved → analysis/charts/fig8_ttest_distribution.png')
+print(f'Fig 8 saved -> analysis/charts/fig8_ttest_distribution.png')
 print(f'    T_calc = {t_calc:.4f},  T_crit = ±{t_crit:.4f},  df = {df_val}')

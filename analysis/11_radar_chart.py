@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import df_inv100, df_app100, df_rdy100
+from analysis.setup import *
+from analysis.data_load import df_inv100, df_app100, df_rdy100
 
 def get_scores_2025(country=None):
     if country:
@@ -63,4 +63,4 @@ ax.set_title('Fig 10 (Bonus): Pillar Comparison — India vs Switzerland vs Aver
 plt.tight_layout()
 plt.savefig('analysis/charts/fig10_radar_chart.png')
 plt.show()
-print('Fig 10 saved → analysis/charts/fig10_radar_chart.png')
+print('Fig 10 saved -> analysis/charts/fig10_radar_chart.png')

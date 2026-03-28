@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts, global_avg
+from analysis.setup import *
+from analysis.data_load import india_ts, global_avg
 
 india_overall = india_ts['Overall'].values
 global_vals   = global_avg[YEARS].values
@@ -51,4 +51,4 @@ ax.legend(fontsize=9)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig4_india_vs_global_avg.png')
 plt.show()
-print('Fig 4 saved → analysis/charts/fig4_india_vs_global_avg.png')
+print('Fig 4 saved -> analysis/charts/fig4_india_vs_global_avg.png')

@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts
+from analysis.setup import *
+from analysis.data_load import india_ts
 
 def desc_stats(series):
     s = series.dropna()
@@ -59,5 +59,5 @@ ax.set_title('Descriptive Statistics — India (2015–2025)',
 plt.tight_layout()
 plt.savefig('analysis/charts/fig3_descriptive_stats_table.png')
 plt.show()
-print('Fig 3 saved → analysis/charts/fig3_descriptive_stats_table.png')
+print('Fig 3 saved -> analysis/charts/fig3_descriptive_stats_table.png')
 print(stat_df.to_string())

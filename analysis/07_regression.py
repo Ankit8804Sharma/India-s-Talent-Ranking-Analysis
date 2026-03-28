@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts
+from analysis.setup import *
+from analysis.data_load import india_ts
 
 fig, axes = plt.subplots(1, 3, figsize=(16, 5.5))
 
@@ -42,7 +42,7 @@ for ax, (col, label, color) in zip(axes, pillar_pairs):
             bbox=dict(boxstyle='round,pad=0.4', facecolor='#F8F9FA',
                       edgecolor=color, linewidth=1.5))
 
-    ax.set_title(f'{label} → Overall', fontweight='bold')
+    ax.set_title(f'{label} -> Overall', fontweight='bold')
     ax.set_xlabel(label)
     ax.set_ylabel('Overall Score')
     ax.grid(alpha=0.2)
@@ -52,4 +52,4 @@ plt.suptitle('Fig 6: Regression of Each Pillar vs Overall Score (India 2015–20
 plt.tight_layout()
 plt.savefig('analysis/charts/fig6_regression_scatter.png')
 plt.show()
-print('Fig 6 saved → analysis/charts/fig6_regression_scatter.png')
+print('Fig 6 saved -> analysis/charts/fig6_regression_scatter.png')

@@ -3,8 +3,8 @@
 
 import sys
 sys.path.append('.')
-from analysis.setup_00 import *
-from analysis.data_loader_01 import india_ts
+from analysis.setup import *
+from analysis.data_load import india_ts
 
 x_hist = np.array(YEARS)
 y_hist = india_ts['Overall'].values
@@ -46,7 +46,7 @@ for yr, val in zip(forecast_years, forecast_vals):
 
 # Divider at 2025
 ax.axvline(2025, color='#BDC3C7', linestyle='--', linewidth=1)
-ax.text(2025.1, y_hist.min() + 0.3, 'Forecast →',
+ax.text(2025.1, y_hist.min() + 0.3, 'Forecast ->',
         fontsize=8.5, color='#7F8C8D')
 
 all_x = np.concatenate([x_hist, forecast_years])
@@ -63,6 +63,6 @@ ax.grid(alpha=0.25)
 plt.tight_layout()
 plt.savefig('analysis/charts/fig9_forecast.png')
 plt.show()
-print('Fig 9 saved → analysis/charts/fig9_forecast.png')
+print('Fig 9 saved -> analysis/charts/fig9_forecast.png')
 for yr, val in zip(forecast_years, forecast_vals):
     print(f'   {yr}: {val:.2f}')

@@ -2,7 +2,7 @@
 # Loads all sheets from the Excel dataset and builds core dataframes
 # Import this in every analysis script to get clean, ready-to-use data
 
-from analysis.setup_00 import *
+from analysis.setup import *
 
 def load_sheet(sheet_name, index_col=0):
     """Load a sheet, drop trailing None columns, set index."""
