@@ -39,6 +39,6 @@ snap25 = pd.DataFrame({
 }).sort_values('Rank').reset_index(drop=True)
 
 if __name__ == '__main__':
-    print(f'✅ Data loaded — {len(df_overall)} countries, {YEARS[0]}–{YEARS[-1]}')
+    print(f'Data loaded — {len(df_overall)} countries, {YEARS[0]}–{YEARS[-1]}')
     print(f'   India 2025: Overall={india_ts.loc[2025,"Overall"]:.3f}, '
           f'Rank={int(snap25[snap25.Country=="India"].Rank.values[0])}')
