@@ -8,8 +8,8 @@ import sys
 scripts = [
     'analysis/02_descriptive_stats.py',
     'analysis/03_global_rankings.py',
-    'analysis/04_india_trends.py',
-    'analysis/05_india_vs_global.py',
+    'analysis/04_India_trends.py',
+    'analysis/05_India_vs_global.py',
     'analysis/06_correlation.py',
     'analysis/07_regression.py',
     'analysis/08_top_bottom.py',
